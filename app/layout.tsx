@@ -1,6 +1,6 @@
 "use client";
 import { Agbalumo, Montserrat } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import Cursor from "./Cursor";
 import { useState } from "react";
 import { cursorContext } from "./cursorContext";

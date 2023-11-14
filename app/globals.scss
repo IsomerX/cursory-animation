@@ -32,3 +32,25 @@ a {
     transition: all 0.3s ease-out;
 }
 
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+    margin-bottom: 1em;
+    opacity: 0.6;
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+        a {
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+

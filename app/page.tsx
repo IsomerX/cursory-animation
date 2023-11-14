@@ -5,6 +5,7 @@ import { useContext } from "react";
 import Listing from "./Listing";
 import { mont } from "./fonts";
 import { cursorContext } from "./cursorContext";
+import Footer from "./Footer";
 export default function Home() {
     const { setCursorHovering } = useContext(cursorContext);
     return (
@@ -37,6 +38,7 @@ export default function Home() {
             </p>
             <div className={styles.hr}></div>
             <Listing />
+            <Footer />
         </main>
     );
 }
