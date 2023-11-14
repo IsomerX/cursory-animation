@@ -1,7 +1,8 @@
 "use client";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useContext, useEffect, useState } from "react";
-import { cursorContext } from "./layout";
+import { cursorContext } from "./cursorContext";
+
 const Cursor = () => {
     const [cursorSize, setCursorSize] = useState(10);
     const { cursorHovering } = useContext(cursorContext);

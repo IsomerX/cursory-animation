@@ -1,7 +1,9 @@
 "use client";
 import { useContext } from "react";
 import styles from "./page.module.scss";
-import { cursorContext, mont } from "./layout";
+
+import { mont } from "./fonts";
+import { cursorContext } from "./cursorContext";
 const Listing = () => {
     const { setCursorHovering } = useContext(cursorContext);
     return (

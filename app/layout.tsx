@@ -2,18 +2,11 @@
 import { Agbalumo, Montserrat } from "next/font/google";
 import "./globals.css";
 import Cursor from "./Cursor";
-import { createContext, useContext, useState } from "react";
+import { useState } from "react";
+import { cursorContext } from "./cursorContext";
 
-export const ag = Agbalumo({ weight: "400", subsets: ["latin"] });
-export const mont = Montserrat({ subsets: ["latin"] });
-
-const cursorContextValues = {
-    cursorHovering: false,
-    setCursorHovering: (hovering: boolean) => {},
-    action: 0,
-};
-
-export const cursorContext = createContext(cursorContextValues);
+const ag = Agbalumo({ weight: "400", subsets: ["latin"] });
+const mont = Montserrat({ subsets: ["latin"] });
 
 export default function RootLayout({
     children,

@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import styles from "./page.module.scss";
-import { cursorContext, mont } from "./layout";
 import { useContext } from "react";
 import Listing from "./Listing";
+import { mont } from "./fonts";
+import { cursorContext } from "./cursorContext";
 export default function Home() {
     const { setCursorHovering } = useContext(cursorContext);
     return (
