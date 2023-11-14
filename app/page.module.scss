@@ -31,6 +31,12 @@
         border: 1px solid #001514a2;
         opacity: 0.5;
     }
+
+    @media screen and (max-width: 468px) {
+        .hr {
+            width: 100%;
+        }
+    }
 }
 
 .listing {
@@ -40,6 +46,21 @@
     margin: 2rem 0;
     width: 80%;
     margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+        & {
+            grid-template-columns: 1fr;
+            width: 100%;
+            grid-template-areas: "image" "content";
+        }
+
+        .listing__content_container {
+            grid-area: content;
+        }
+        listing__image_container {
+            grid-area: image;
+        }
+    }
 
     .para {
         font-family: var(--font-montserrat);

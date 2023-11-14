@@ -30,17 +30,20 @@ a {
     background: #fff;
     pointer-events: none;
     transition: all 0.3s ease-out;
+    @media screen and (max-width: 768px) {
+        & {
+            display: none;
+        }
+    }
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     gap: 1em;
-    margin-bottom: 1em;
+    margin: 2em auto 1rem auto;
     opacity: 0.6;
     .links {
         display: flex;

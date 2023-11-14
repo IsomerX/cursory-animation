@@ -8,7 +8,7 @@ const Listing = () => {
     const { setCursorHovering } = useContext(cursorContext);
     return (
         <div className={styles.listing}>
-            <div>
+            <div className={styles.listing__content_container}>
                 <div className={styles.listing__heading}>01</div>
                 <div
                     className={styles.para}
